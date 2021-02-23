@@ -14,3 +14,11 @@ elif m3/54 == 0:
 else:
     #caso sobre alguns metros
     print(f'Será preciso {(m3//54) + 1} lata(s), totalizando R${(((m3//54)+1)*80):.2f}')
+
+
+# FORMA DO PROFESSOR
+# entrada de dados
+m = int(input('Metros: '))
+# cálculo da quantidade de latas
+latas = m // 54 if m % 54 == 0 else m // 54 + 1
+print(f'Compre {latas} lata(s) pelo valor de RS{latas*80:.2f}')
